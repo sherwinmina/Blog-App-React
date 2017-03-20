@@ -13,7 +13,7 @@ class PostShow extends Component {
   }
 
   onDeleteClick() {
-    this.props.fetchPost(this.props.params.id)
+    this.props.deletePost(this.props.params.id)
       .then(() => { this.context.router.push('/'); });
   }
 
